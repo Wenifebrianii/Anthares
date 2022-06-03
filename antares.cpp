@@ -6,4 +6,6 @@
 
 using namespace std;
 
-float densitas;   /*densitas ini memiliki satuan g cm^-3
+int main(){
+  //deklarasi variabel
+  float pi = 3.14;
