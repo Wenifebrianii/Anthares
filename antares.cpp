@@ -55,3 +55,11 @@ int main(){
     << fixed << setprecision(4) << F3x << setw(4) << " "\
     << fixed << setprecision(4) << F3y << setw(4) << " "\
     << fixed << setprecision(4) << F3z << "\n";
+
+
+    file.close();
+
+    cout << "program selesai!";
+
+    return 0;
+}
