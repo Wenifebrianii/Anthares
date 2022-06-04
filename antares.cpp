@@ -50,6 +50,7 @@ int main(){
     << fixed << setprecision(4) << F2x << setw(4) << " "\
     << fixed << setprecision(4) << F2y << setw(4) << " "\
     << fixed << setprecision(4) << F2z << "\n";
+  
     file << setw(4) << "F" << setw(4) << " "\
     << fixed << setprecision(4) << F3x << setw(4) << " "\
     << fixed << setprecision(4) << F3y << setw(4) << " "\
