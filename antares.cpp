@@ -31,3 +31,12 @@ int main(){
     F3x = 0.0;
     F3y = - F2y;
     F3z = F2z;
+
+// memasukkan nilai tersebut ke dalam File
+    ofstream file;
+    file.open("nitrogentriflorida.xyz");
+    file << "4\n" << endl;
+    file << setw(4) << "N" << setw(4) << " "\
+    << fixed << setprecision(4) << Nx << setw(4) << " "\
+    << fixed << setprecision(4) << Ny << setw(4) << " "\
+    << fixed << setprecision(4) << Nz << "\n";
