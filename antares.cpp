@@ -51,3 +51,24 @@ int main(){
     F2x[counter] = Nx[counter] + rB_F2x;
     F2y[counter] = Ny[counter] + rB_F2y;
     F2z[counter] = Nz[counter] + rB_F2z;
+
+F3x[counter] = Nx[counter] + rB_F3x;
+    F3y[counter] = Ny[counter] + rB_F3y;
+    F3z[counter] = Nz[counter] + rB_F3z;
+    counter += 1;
+    }
+    }
+    }
+
+    // hasil iterasi dimasukkan ke dalam file xyz
+    ofstream file;
+    file.open("nitrogentriflorida-ruah.xyz");
+    int N = 125*4;
+    file << N << "\n" << endl;
+
+    // iterasi dalam output array
+    for (int m = 0; m < 125; m++){
+    file << setw(4) << "N" << setw(4) << " "\
+         << fixed << setprecision(4) << Nx[m] << setw(4) << " "\
+         << fixed << setprecision(4) << Ny[m] << setw(4) << " "\
+         << fixed << setprecision(4) << Nz[m] << "\n";
