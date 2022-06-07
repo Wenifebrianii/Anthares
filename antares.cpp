@@ -10,56 +10,32 @@ using namespace std;
 int main(){
   //deklarasi variabel
   float pi = 3.14;
+  Int counter = 0;
 
     // deklarasi senyawa nitrogentriflorida
-    float Nx, Ny, Nz;
-    float F1x, F1y, F1z;
-    float F2x, F2y, F2z;
-    float F3x, F3y, F3z;
+    float Nx[125], Ny[125], Nz[125];
+    float F1x[125], F1y[125], F1z[125];
+    float F2x[125], F2y[125], F2z[125];
+    float F3x[125], F3y[125], F3z[125];
 
     // masukkan nilai untuk setiap variabel NF3
-    Nx = Ny = Nz = 0.0;
+    float rB_Nx = 0.0;
+    float rB_Ny = 0.0;
+    float rB_Nz = 0.0;
 
-    F1x = sin(55.2*pi/180) * 1.373;
-    F1y = 0.0;
-    F1z = cos(55.2*pi/180) * 1.373;
+    float rB_F1x = sin(55.2*pi/180) * 1.373;
+    float rB_F1y = 0.0;
+    float rB_F1z = cos(55.2*pi/180) * 1.373;
 
-    F2x = 0.0;
-    F2y = sin(55.2*pi/180) * 1.373;
-    F2z = - cos(55.2*pi/180) * 1.373;
+    float rB_F2x = 0.0;
+    float rB_F2y = sin(55.2*pi/180) * 1.373;
+    float rB_F2z = - cos(55.2*pi/180) * 1.373;
 
-    F3x = 0.0;
-    F3y = - F2y;
-    F3z = F2z;
-
-// memasukkan nilai tersebut ke dalam File
-    ofstream file;
-    file.open("nitrogentriflorida.xyz");
-    file << "4\n" << endl;
-    file << setw(4) << "N" << setw(4) << " "\
-    << fixed << setprecision(4) << Nx << setw(4) << " "\
-    << fixed << setprecision(4) << Ny << setw(4) << " "\
-    << fixed << setprecision(4) << Nz << "\n";
-
-    file << setw(4) << "F" << setw(4) << " "\
-    << fixed << setprecision(4) << F1x << setw(4) << " "\
-    << fixed << setprecision(4) << F1y << setw(4) << " "\
-    << fixed << setprecision(4) << F1z << "\n";
-
-    file << setw(4) << "F" << setw(4) << " "\
-    << fixed << setprecision(4) << F2x << setw(4) << " "\
-    << fixed << setprecision(4) << F2y << setw(4) << " "\
-    << fixed << setprecision(4) << F2z << "\n";
-  
-    file << setw(4) << "F" << setw(4) << " "\
-    << fixed << setprecision(4) << F3x << setw(4) << " "\
-    << fixed << setprecision(4) << F3y << setw(4) << " "\
-    << fixed << setprecision(4) << F3z << "\n";
-
-
-    file.close();
-
-    cout << "program selesai!";
-
-    return 0;
-}
+    float rB_F3x = 0.0;
+    float rB_F3y = - rB_F2y;
+    float rB_F3z = rB_F2z;
+    
+    // iterasi untuk setiap senyawa nitrogentriflorida
+    for(int i = 0; i < 5; i++){
+    for(int j = 0; j < 5; j++){
+    for(int k = 0; k < 5; k++){
