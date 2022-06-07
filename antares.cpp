@@ -39,3 +39,15 @@ int main(){
     for(int i = 0; i < 5; i++){
     for(int j = 0; j < 5; j++){
     for(int k = 0; k < 5; k++){
+ 
+    Nx[counter] = rB_Nx + (i*3.01);
+    Ny[counter] = rB_Ny + (j*3.01);
+    Nz[counter] = rB_Nz + (k*3.01);
+    
+    F1x[counter] = Nx[counter] + rB_F1x;
+    F1y[counter] = Ny[counter] + rB_F1y;
+    F1z[counter] = Nz[counter] + rB_F1z;
+
+    F2x[counter] = Nx[counter] + rB_F2x;
+    F2y[counter] = Ny[counter] + rB_F2y;
+    F2z[counter] = Nz[counter] + rB_F2z;
