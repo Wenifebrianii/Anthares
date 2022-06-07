@@ -83,3 +83,15 @@ F3x[counter] = Nx[counter] + rB_F3x;
          << fixed << setprecision(4) << F2y[m] << setw(4) << " "\
          << fixed << setprecision(4) << F2z[m] << "\n";
  
+file << setw(4) << "F" << setw(4) << " "\
+         << fixed << setprecision(4) << F3x[m] << setw(4) << " "\
+         << fixed << setprecision(4) << F3y[m] << setw(4) << " "\
+         << fixed << setprecision(4) << F3z[m] << "\n";
+    }
+
+    file.close();
+
+    cout << "program selesai!";
+
+    return 0;
+}
