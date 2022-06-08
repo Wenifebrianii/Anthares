@@ -140,3 +140,20 @@ float dx, dy, dz;
             }
         }
     }
+
+    cout << "Energi potensial dari senyawa nitrogentriflorida ruah: " \
+         << Ep/(float)N << "kJ/mol";
+
+    // hasil iterasi dimasukkan ke dalam file xyz
+    ofstream file;
+    file.open("nitrogentriflorida-ep.xyz");
+    file << N << "\n" << endl;
+
+    int Nw = N/4;
+
+    // iterasi dalam output array
+    for (int m = 0; m < Nw; m++){
+    file << setw(4) << "N" << setw(4) << " "\
+         << fixed << setprecision(4) << Nx[m] << setw(4) << " "\
+         << fixed << setprecision(4) << Ny[m] << setw(4) << " "\
+         << fixed << setprecision(4) << Nz[m] << "\n";
