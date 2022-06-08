@@ -113,3 +113,30 @@ float dx, dy, dz;
     }
     }
     }
+
+   // main hitung energi potensial
+    A12 = 4.0 * epsilon * pow(sigma,12);
+    B6 = 4.0 * epsilon * pow(sigma, 6);
+
+    Ep = 0.0;
+    for(int a = 0; a < (N-1); a++){
+        for(int b = (0+1); b < N; b++){
+            
+            dx = Nx[a] - Nx[b];
+            dy = Ny[a] - Ny[b];
+            dz = Nz[a] - Nz[b];
+
+            dx = dx - round(dx/lx) * lx;
+            dy = dy - round(dy/ly) * ly;
+            dz = dz - round(dz/lz) * lz;
+
+            rij = pow(dx,2) + pow(dy,2) + pow(dz,2);
+            if(rij < rcut2){
+                rij6 = pow(rij,3);
+                rij12 = pow(rij6,2);
+                Ep = (A12/rij12) - (B6/rij6);
+                Ep_LJ = (A12/rij12) - (B6/rij6);
+                Ep += Ep_LJ;
+            }
+        }
+    }
