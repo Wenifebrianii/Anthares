@@ -157,3 +157,13 @@ float dx, dy, dz;
          << fixed << setprecision(4) << Nx[m] << setw(4) << " "\
          << fixed << setprecision(4) << Ny[m] << setw(4) << " "\
          << fixed << setprecision(4) << Nz[m] << "\n";
+
+   file << setw(4) << "F" << setw(4) << " "\
+         << fixed << setprecision(4) << F1x[m] << setw(4) << " "\
+         << fixed << setprecision(4) << F1y[m] << setw(4) << " "\
+         << fixed << setprecision(4) << F1z[m] << "\n";
+
+    file << setw(4) << "F" << setw(4) << " "\
+         << fixed << setprecision(4) << F2x[m] << setw(4) << " "\
+         << fixed << setprecision(4) << F2y[m] << setw(4) << " "\
+         << fixed << setprecision(4) << F2z[m] << "\n";
