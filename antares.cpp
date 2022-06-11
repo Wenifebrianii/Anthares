@@ -176,7 +176,5 @@ float dx, dy, dz;
 
     file.close();
 
-    cout << "program selesai!";
-
     return 0;
 }
