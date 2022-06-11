@@ -81,13 +81,13 @@ float dx, dy, dz;
     float rB_F1y = 0.0;
     float rB_F1z = cos(54.7355*pi/180) * 1.470;
 
-    float rB_F2x = 0.0;
-    float rB_F2y = sin(54.7355*pi/180) * 1.470;
-    float rB_F2z = - cos(54.7355*pi/180) * 1.470;
+    float rB_F2x = - rB_F1x;
+    float rB_F2y = rB_F1y;
+    float rB_F2z = rB_F1z;
 
-    float rB_F3x = rB_F2x;
-    float rB_F3y = - rB_F2y;
-    float rB_F3z = rB_F2z;
+    float rB_F3x = 0.0;
+    float rB_F3y = sin(54.7355*pi/180) * 1.470;
+    float rB_F3z = - cos(54.7355*pi/180) * 1.470;
     
     int counter = 0;
         for(int i = 0; i < numb_lat; i++){ //x
