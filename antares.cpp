@@ -83,7 +83,7 @@ float dx, dy, dz;
 
     float rB_F2x = - rB_F1x;
     float rB_F2y = rB_F1y;
-    float rB_F2z = rB_F1z;
+    float rB_F2z = - rB_F1z;
 
     float rB_F3x = 0.0;
     float rB_F3y = sin(54.7355*pi/180) * 1.470;
