@@ -37,7 +37,7 @@ float dx, dy, dz;
     cout << "Masukkan nilai densitas dari nitrogentriflorida (eg. 1.0): ";
     cin >> densitas;
 
-    numb_mol = densitas * (Na / Mr_Nitrogentriflorida) * cm3_to_A3;
+    numb_mol = densitas * (Na / Mr_nitrogentriflorida) * cm3_to_A3;
     cout << "Masukkan panjang sel simulasi (eg. 5): ";
     cin >> numb_lat;
     N = (pow(numb_lat,3)) * 3;
