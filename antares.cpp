@@ -40,7 +40,7 @@ float dx, dy, dz;
     numb_mol = densitas * (Na / Mr_nitrogentriflorida) * cm3_to_A3;
     cout << "Masukkan panjang sel simulasi (eg. 5): ";
     cin >> numb_lat;
-    N = (pow(numb_lat,3)) * 3;
+    N = (pow(numb_lat , 3)) * 3;
     volum = (float)N / numb_mol;
 
     // panjang sel simulasi secara perhitungan
