@@ -149,10 +149,10 @@ float dx, dy, dz;
     file.open("nitrogentriflorida-ep.xyz");
     file << N << "\n" << endl;
 
-    int Nw = N/4;
+    int N = 125 * 4;
 
     // iterasi dalam output array
-    for (int m = 0; m < Nw; m++){
+    for (int m = 0; m < 125; m++){
     file << setw(4) << "N" << setw(4) << " "\
          << fixed << setprecision(4) << Nx[m] << setw(4) << " "\
          << fixed << setprecision(4) << Ny[m] << setw(4) << " "\
