@@ -1,4 +1,4 @@
-%%writefile senyawa-nitrogentriflorida.cpp
+
 
 #include "iostream"
 #include "cmath"
