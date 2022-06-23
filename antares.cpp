@@ -94,9 +94,9 @@ float dx, dy, dz;
            for(int j = 0; j < 5; j++){ //y
                for(int k = 0; k < 5; k++){ //z 
  
-    Nx[counter] = rB_Nx + (i*3.01);
-    Ny[counter] = rB_Ny + (j*3.01);
-    Nz[counter] = rB_Nz + (k*3.01);
+    Nx[counter] = rB_Nx + (i*6.02);
+    Ny[counter] = rB_Ny + (j*6.02);
+    Nz[counter] = rB_Nz + (k*6.02);
     
     F1x[counter] = Nx[counter] + rB_F1x;
     F1y[counter] = Ny[counter] + rB_F1y;
